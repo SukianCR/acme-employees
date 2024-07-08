@@ -22,7 +22,16 @@ const App = () => {
 
   function EmployeeRow({ employee }) {
     if (employee.is_admin) {
-      return <li > <p > {employee.name}</p><p className="admin"> Administrator</p> </li>;
+      return (
+        <li>
+          {" "}
+          <p> {employee.name}</p>
+          <p>
+            <span class="material-symbols-outlined admin">shield_person</span>
+          </p>
+          <p className="admin"> Administrator</p>{" "}
+        </li>
+      );
     }
     return <li>{employee.name}</li>;
   }
