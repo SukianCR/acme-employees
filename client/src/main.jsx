@@ -20,22 +20,20 @@ const App = () => {
     return <section className="loading">Loading</section>;
   }
 
+  function EmployeeRow({ employee }) {
+    if (employee.is_admin) {
+      return <li > <p > {employee.name}</p><p className="admin"> Administrator</p> </li>;
+    }
+    return <li>{employee.name}</li>;
+  }
+
   return (
     <main>
       <article>
         <h1>Acme HR ({employees.length})</h1>
         <ul>
           {employees.map((employee) => {
-            return (
-              <li key={employee.id}>
-                {employee.name}
-                {employee.is_admin ? (
-                  //   <span  style={{ paddingLeft: "1rem" }}>Administrator</span>
-                  // ) : null}
-                  <span className="admin">Administrator</span>
-                ) : null}
-              </li>
-            );
+            return <EmployeeRow employee={employee} />;
           })}
         </ul>
       </article>
