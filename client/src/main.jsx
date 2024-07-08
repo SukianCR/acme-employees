@@ -23,13 +23,13 @@ const App = () => {
   function EmployeeRow({ employee }) {
     if (employee.is_admin) {
       return (
-        <li>
+        <li name={employee.id}>
           {" "}
-          <p> {employee.name}</p>
-          <p>
-            <span class="material-symbols-outlined admin">shield_person</span>
-          </p>
-          <p className="admin"> Administrator</p>{" "}
+          <span> {employee.name}</span>
+          <span class="material-symbols-outlined admin">
+            admin_panel_settings{" "}
+          </span>
+          <span className="admin">Admin</span>
         </li>
       );
     }
@@ -42,7 +42,7 @@ const App = () => {
         <h1>Acme HR ({employees.length})</h1>
         <ul>
           {employees.map((employee) => {
-            return <EmployeeRow employee={employee} />;
+            return <EmployeeRow key={employee.id} employee={employee} />;
           })}
         </ul>
       </article>
