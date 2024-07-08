@@ -1,0 +1,54 @@
+body {
+  font-family: verdana;
+  background-color: #ffffff;
+  background-image: url("https://www.transparenttextures.com/patterns/batthern.png");
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+
+.loading {
+  background-color: dodgerBlue;
+  color: white;
+}
+
+main {
+  display: flex;
+
+  justify-content: center;
+}
+
+article {
+  display: flex;
+
+  flex-direction: column;
+  width: 40%;
+}
+
+ul {
+  background-color: rgba(0, 0, 128, 0.123);
+  padding: 0px !important;
+  border-top: navy 0.23em solid;
+  border-left: navy 0.23em solid;
+  border-right: navy 0.23em solid;
+  box-shadow: 0em 0em 1.5em yellow;
+}
+
+ul > li {
+  list-style: none;
+
+  text-shadow: 0.1em 0.1em 0em yellow;
+  border-bottom: solid 0.23em navy;
+
+  padding: 2em;
+  display: flex;
+  justify-content: space-around;
+}
+
+h1 {
+  font-size: 2em;
+  text-shadow: 0.1em 0.1em 0.2em yellow;
+  color: navy;
+  text-align: center;
+}
+.admin {
+  text-shadow: 0em 0em 0.1em rgb(180, 30, 30);
+}
