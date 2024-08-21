@@ -1,0 +1,6 @@
+postgresql://acme_hr_db_user:zwphASfNVXERpI0QMno266e4AifqDXaW@dpg-cr2iukrtq21c73f9jdjg-a/acme_hr_db_7lt3
+
+
+acme_hr_db_7lt3
+
+acme_hr_db_user

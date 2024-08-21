@@ -27,7 +27,7 @@ const App = () => {
           {" "}
           <span> {employee.name}</span>
           <span className="material-symbols-outlined admin">
-            admin_panel_settings{" "}
+            admin_panel_settings
           </span>
           <span className="admin">Admin</span>
         </li>
