@@ -8,7 +8,10 @@ export default defineConfig({
   plugins: [react()],
   server: {
     proxy: {
-      "/api": `http://localhost:${serverPort}`,
+      // "/api": `http://localhost:${serverPort}`,
+      "/api": `https://acme-employees-xixj.onrender.com:${serverPort}`,
     },
   },
 });
+
+/*  https://acme-employees-xixj.onrender.com/api/employees  */
