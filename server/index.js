@@ -7,7 +7,7 @@ const client = new pg.Client(
   process.env.DATABASE_URL || "postgres://localhost/acme_hr_db"
 );
 
-const PORT = process.env.PORT || 3003;
+const PORT = process.env.PORT || 3023;
 
 app.get("/", async (req, res, next) => {
   res.send("Acme Employees");
