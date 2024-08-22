@@ -8,13 +8,15 @@ const App = () => {
 
   useEffect(() => {
     const fetchEmployees = async () => {
-      const response = await axios.get("/api/employees");
+      const response = await axios.get(
+        "https://acme-employees-xixj.onrender.com/api/employees"
+      );
       setEmployees(response.data);
       setIsLoading(false);
     };
     fetchEmployees();
   }, []);
-  console.log("employees" +employees);
+  console.log("employees" + employees);
 
   if (isLoading) {
     return <section className="loading">Loading</section>;
