@@ -6,12 +6,17 @@ const pg = require("pg");
 const client = new pg.Client(
   process.env.DATABASE_URL || "postgres://localhost/acme_hr_db"
 );
+const cors = require("cors");
 
 const PORT = process.env.PORT || 3023;
+
+app.use(cors());
 
 app.get("/", async (req, res, next) => {
   res.send("Acme Employees");
 });
+
+
 
 app.get("/api/employees", async (req, res, next) => {
   try {

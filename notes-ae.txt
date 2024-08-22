@@ -4,3 +4,41 @@ postgresql://acme_hr_db_user:zwphASfNVXERpI0QMno266e4AifqDXaW@dpg-cr2iukrtq21c73
 acme_hr_db_7lt3
 
 acme_hr_db_user
+
+
+Hola. Soy la persona que hizo este website. Esta es solo una prueba. Estoy revisando este form porq Alan me dijo que lo revisara. De paso les cuento que estoy trabajando en un sitio nuevo para uds y espero este listo al final de esta semana. 
+
+
+
+<p>[redirestaurant apikeyid="1" apikey1="1d639909-108d-4d9d-9cc0-0d6a34879b9c" placeid="31536"]</p>
+
+
+<?php
+/**
+ * The template for displaying the footer.
+ *
+ * @package flatsome
+ */
+
+global $flatsome_opt;
+?>
+
+</main>
+
+<footer id="footer" class="footer-wrapper">
+
+	<?php do_action('flatsome_footer'); ?>
+
+</footer>
+
+</div>
+
+<?php wp_footer(); ?>
+
+</body>
+</html>
+
+
+<hr />
+<p>[redirestaurant apikeyid="1" apikey1="84ea3dc4-53ac-42cf-8857-2e4c6ff2d6ef" placeid="38142"]</p>
+<hr />
