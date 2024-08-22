@@ -14,7 +14,7 @@ const App = () => {
     };
     fetchEmployees();
   }, []);
-  console.log("employees" + employees);
+  console.log("employees" +employees);
 
   if (isLoading) {
     return <section className="loading">Loading</section>;
