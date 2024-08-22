@@ -10,13 +10,15 @@ const cors = require("cors");
 
 const PORT = process.env.PORT || 3023;
 
-app.use(cors());
+// app.use(cors());
+app.use((req, res, next) => {
+  res.setHeader("Access-Control-Allow-Origin", "*");
+  next();
+});
 
 app.get("/", async (req, res, next) => {
   res.send("Acme Employees");
 });
-
-
 
 app.get("/api/employees", async (req, res, next) => {
   try {
