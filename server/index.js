@@ -6,7 +6,6 @@ const pg = require("pg");
 const client = new pg.Client(
   process.env.DATABASE_URL || "postgres://localhost/acme_hr_db"
 );
-const cors = require("cors");
 
 const PORT = process.env.PORT || 3023;
 
